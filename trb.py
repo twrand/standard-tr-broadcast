@@ -52,12 +52,12 @@ def _getMinSignalDepth(t, d, e):
 			# Test if v_(x,y) \in T(d,e)
 			# If so, account for signal.
 			if ((Tx - e*Ty) % d == 0):
-				# Increment signal recieved at each test vertex from this tower
+				# Increment signal recieved at each test vertex from tower
 				for vx in range(0,d):
 					test_vertices[vx] += _sig(t, vx, 0, Tx, Ty)
 	return min(test_vertices)
 
-# Given a t,r standard broadcast, test all standard patterns up to the theoretical
+# Given a t,r standard broadcast, test all standard patterns up to the 
 # lower bound of density and return the standard broadcast of lowest density.
 def getBestTRStandardBroadcast(t,r):
 	d_opt = 0
@@ -69,7 +69,8 @@ def getBestTRStandardBroadcast(t,r):
 				d_opt = d
 				e_opt = e
 				
-	print "Opt Std ("+str(t)+", "+str(r)+") broadcast is T("+str(d_opt)+","+str(e_opt)+") (density 1/"+str(d_opt)+")"
+	print "Best standard ("+str(t)+", "+str(r)+") broadcast is T("+str(d_opt)+",",
+	print str(e_opt)+"). (Density 1/"+str(d_opt)+")"
 
 ###############################################################################
 # Call methods from here                                                      #
