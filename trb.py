@@ -69,8 +69,8 @@ def getBestTRStandardBroadcast(t,r):
 				d_opt = d
 				e_opt = e
 				
-	print "Best standard ("+str(t)+", "+str(r)+") broadcast is T("+str(d_opt)+",",
-	print str(e_opt)+"). (Density 1/"+str(d_opt)+")"
+	print "Best standard ("+str(t)+", "+str(r)+") broadcast is",
+	print "T("+str(d_opt)+","+str(e_opt)+"). (Density 1/"+str(d_opt)+")"
 
 ###############################################################################
 # Call methods from here                                                      #
