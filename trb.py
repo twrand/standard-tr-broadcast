@@ -1,4 +1,13 @@
-# Todo attribute this properly
+###############################################################################
+# Computes best standard (t,r) broadcasts.                                    #
+#                                                                             #
+# (c) Tim Randolph 2017                                                       #
+#                                                                             #
+# This code is licensed under a Creative Commons Attribution 4.0 International#
+# License (CC BY 4.0), which means you can share and adapt it as long as you  #
+# credit the author. For more information, see                                #
+# https://creativecommons.org/licenses/by/4.0                                 #
+###############################################################################
 
 import math
 
